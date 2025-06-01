@@ -37,15 +37,15 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
 
     using IServiceScope scope = app.Services.CreateScope();
 
     EnsureDatabaseUpToDate<ApplicationDbContext>(scope);
-}
+// }
 
 // Configure the HTTP request pipeline
 app.UseCors("AllowAll");
@@ -53,9 +53,9 @@ app.UseRouting();
 app.UseAuthorization(); // optional
 app.MapControllers();
 
-using (var scope = app.Services.CreateScope())
+using (var seedScope = app.Services.CreateScope())
 {
-    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    var context = seedScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     DataSeeder.SeedData(context);
 }
 
