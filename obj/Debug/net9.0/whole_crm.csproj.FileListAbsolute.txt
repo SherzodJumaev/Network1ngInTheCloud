@@ -142,4 +142,4 @@ E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\refint\whole_crm.dll
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\whole_crm.pdb
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\whole_crm.genruntimeconfig.cache
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\ref\whole_crm.dll
-E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-m5pxeiodzy.gz
+E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-zrhb03ee8w.gz
