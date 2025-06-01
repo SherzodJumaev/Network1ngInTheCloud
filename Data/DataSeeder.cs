@@ -8,6 +8,8 @@ namespace whole_crm.Data
     {
         public static void SeedData(ApplicationDbContext context)
         {
+            if (context.Products.Any()) return;
+
             var products = new List<Product>
             {
                 new Product { Name = "Men's Formal Shirts", Category = "Formal Wear", Price = 89.99m, StockQuantity = 50, SalesCount = 46, Revenue = 2300m },

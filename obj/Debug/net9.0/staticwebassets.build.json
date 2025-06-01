@@ -1,1 +1,1042 @@
-{"Version":1,"Hash":"c/cIqJp7cV4Xv3qaTyHxhWQ+xLGAyeKiuvhGu72H5hU=","Source":"whole_crm","BasePath":"_content/whole_crm","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"whole_crm\\wwwroot","Source":"whole_crm","ContentRoot":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\","BasePath":"_content/whole_crm","Pattern":"**"}],"Assets":[{"Identity":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz","SourceId":"whole_crm","SourceType":"Discovered","ContentRoot":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\","BasePath":"_content/whole_crm","RelativePath":"index#[.{fingerprint=l8sul529yp}]?.html.gz","AssetKind":"All","AssetMode":"All","AssetRole":"Alternative","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html","AssetTraitName":"Content-Encoding","AssetTraitValue":"gzip","Fingerprint":"myaxeffhij","Integrity":"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html","FileLength":2301,"LastWriteTime":"2025-06-01T12:31:15+00:00"},{"Identity":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz","SourceId":"whole_crm","SourceType":"Discovered","ContentRoot":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\","BasePath":"_content/whole_crm","RelativePath":"web#[.{fingerprint=ah9pa7pj6o}]?.css.gz","AssetKind":"All","AssetMode":"All","AssetRole":"Alternative","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css","AssetTraitName":"Content-Encoding","AssetTraitValue":"gzip","Fingerprint":"rmvl4hqr73","Integrity":"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css","FileLength":1861,"LastWriteTime":"2025-06-01T12:31:15+00:00"},{"Identity":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-u50k9czu2f.gz","SourceId":"whole_crm","SourceType":"Discovered","ContentRoot":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\","BasePath":"_content/whole_crm","RelativePath":"web#[.{fingerprint=u50k9czu2f}]?.js.gz","AssetKind":"All","AssetMode":"All","AssetRole":"Alternative","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js","AssetTraitName":"Content-Encoding","AssetTraitValue":"gzip","Fingerprint":"20fj099npc","Integrity":"suaF+pQVQuNyNQcZ8419Z8RXEg1tHSLyZaKpTjBdb2w=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js","FileLength":6119,"LastWriteTime":"2025-06-01T12:31:15+00:00"},{"Identity":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html","SourceId":"whole_crm","SourceType":"Discovered","ContentRoot":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\","BasePath":"_content/whole_crm","RelativePath":"index#[.{fingerprint}]?.html","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"l8sul529yp","Integrity":"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\index.html","FileLength":15010,"LastWriteTime":"2025-06-01T12:17:45+00:00"},{"Identity":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css","SourceId":"whole_crm","SourceType":"Discovered","ContentRoot":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\","BasePath":"_content/whole_crm","RelativePath":"web#[.{fingerprint}]?.css","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"ah9pa7pj6o","Integrity":"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\web.css","FileLength":8293,"LastWriteTime":"2025-06-01T12:18:09+00:00"},{"Identity":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js","SourceId":"whole_crm","SourceType":"Discovered","ContentRoot":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\","BasePath":"_content/whole_crm","RelativePath":"web#[.{fingerprint}]?.js","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"u50k9czu2f","Integrity":"Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\web.js","FileLength":35112,"LastWriteTime":"2025-06-01T12:18:24+00:00"}],"Endpoints":[{"Route":"index.html","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000434404865"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2301"},{"Name":"ETag","Value":"\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"W/\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="}]},{"Route":"index.html","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"15010"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:17:45 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="}]},{"Route":"index.html.gz","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2301"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA="}]},{"Route":"index.l8sul529yp.html","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000434404865"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2301"},{"Name":"ETag","Value":"\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"W/\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""}],"EndpointProperties":[{"Name":"fingerprint","Value":"l8sul529yp"},{"Name":"label","Value":"index.html"},{"Name":"integrity","Value":"sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="}]},{"Route":"index.l8sul529yp.html","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"15010"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:17:45 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"l8sul529yp"},{"Name":"label","Value":"index.html"},{"Name":"integrity","Value":"sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="}]},{"Route":"index.l8sul529yp.html.gz","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"2301"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"fingerprint","Value":"l8sul529yp"},{"Name":"label","Value":"index.html.gz"},{"Name":"integrity","Value":"sha256-QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA="}]},{"Route":"web.ah9pa7pj6o.css","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000537056928"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1861"},{"Name":"ETag","Value":"\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"W/\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""}],"EndpointProperties":[{"Name":"fingerprint","Value":"ah9pa7pj6o"},{"Name":"label","Value":"web.css"},{"Name":"integrity","Value":"sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="}]},{"Route":"web.ah9pa7pj6o.css","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"8293"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:18:09 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"ah9pa7pj6o"},{"Name":"label","Value":"web.css"},{"Name":"integrity","Value":"sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="}]},{"Route":"web.ah9pa7pj6o.css.gz","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1861"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"fingerprint","Value":"ah9pa7pj6o"},{"Name":"label","Value":"web.css.gz"},{"Name":"integrity","Value":"sha256-naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0="}]},{"Route":"web.css","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000537056928"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1861"},{"Name":"ETag","Value":"\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"W/\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="}]},{"Route":"web.css","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"8293"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:18:09 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="}]},{"Route":"web.css.gz","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1861"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0="}]},{"Route":"web.js","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-u50k9czu2f.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000163398693"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6119"},{"Name":"ETag","Value":"\"suaF+pQVQuNyNQcZ8419Z8RXEg1tHSLyZaKpTjBdb2w=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"W/\"Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk=\""}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk="}]},{"Route":"web.js","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"35112"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:18:24 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk="}]},{"Route":"web.js.gz","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-u50k9czu2f.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6119"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"suaF+pQVQuNyNQcZ8419Z8RXEg1tHSLyZaKpTjBdb2w=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-suaF+pQVQuNyNQcZ8419Z8RXEg1tHSLyZaKpTjBdb2w="}]},{"Route":"web.u50k9czu2f.js","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-u50k9czu2f.gz","Selectors":[{"Name":"Content-Encoding","Value":"gzip","Quality":"0.000163398693"}],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6119"},{"Name":"ETag","Value":"\"suaF+pQVQuNyNQcZ8419Z8RXEg1tHSLyZaKpTjBdb2w=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"W/\"Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk=\""}],"EndpointProperties":[{"Name":"fingerprint","Value":"u50k9czu2f"},{"Name":"label","Value":"web.js"},{"Name":"integrity","Value":"sha256-Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk="}]},{"Route":"web.u50k9czu2f.js","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"35112"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:18:24 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"u50k9czu2f"},{"Name":"label","Value":"web.js"},{"Name":"integrity","Value":"sha256-Lrmy1BOGR6W29auROL8WZjQX7/NcimlVhSZqW3nVzbk="}]},{"Route":"web.u50k9czu2f.js.gz","AssetFile":"E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-u50k9czu2f.gz","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"6119"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\"suaF+pQVQuNyNQcZ8419Z8RXEg1tHSLyZaKpTjBdb2w=\""},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:31:15 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Encoding","Value":"gzip"},{"Name":"Vary","Value":"Content-Encoding"}],"EndpointProperties":[{"Name":"fingerprint","Value":"u50k9czu2f"},{"Name":"label","Value":"web.js.gz"},{"Name":"integrity","Value":"sha256-suaF+pQVQuNyNQcZ8419Z8RXEg1tHSLyZaKpTjBdb2w="}]}]}
+{
+  "Version": 1,
+  "Hash": "Ty+K1lZ5F/t0WcivJ0mFwhfvHXGx1+KUp2JHdO0BwAQ=",
+  "Source": "whole_crm",
+  "BasePath": "_content/whole_crm",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "whole_crm\\wwwroot",
+      "Source": "whole_crm",
+      "ContentRoot": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\",
+      "BasePath": "_content/whole_crm",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz",
+      "SourceId": "whole_crm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/whole_crm",
+      "RelativePath": "index#[.{fingerprint=l8sul529yp}]?.html.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "myaxeffhij",
+      "Integrity": "QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html"
+    },
+    {
+      "Identity": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz",
+      "SourceId": "whole_crm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/whole_crm",
+      "RelativePath": "web#[.{fingerprint=ah9pa7pj6o}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "rmvl4hqr73",
+      "Integrity": "naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css"
+    },
+    {
+      "Identity": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-7gb1nofirn.gz",
+      "SourceId": "whole_crm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/whole_crm",
+      "RelativePath": "web#[.{fingerprint=7gb1nofirn}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "m7p9ueuzuw",
+      "Integrity": "HqLuCLx4lH+/n4sv5Lm3L9BjooweZq95le6QSRqE2lo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js"
+    },
+    {
+      "Identity": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html",
+      "SourceId": "whole_crm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\",
+      "BasePath": "_content/whole_crm",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l8sul529yp",
+      "Integrity": "i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css",
+      "SourceId": "whole_crm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\",
+      "BasePath": "_content/whole_crm",
+      "RelativePath": "web#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ah9pa7pj6o",
+      "Integrity": "PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web.css"
+    },
+    {
+      "Identity": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js",
+      "SourceId": "whole_crm",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\",
+      "BasePath": "_content/whole_crm",
+      "RelativePath": "web#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7gb1nofirn",
+      "Integrity": "ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\web.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000434404865"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2301"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:17:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:17:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="
+        }
+      ]
+    },
+    {
+      "Route": "index.html.gz",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:17:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA="
+        }
+      ]
+    },
+    {
+      "Route": "index.l8sul529yp.html",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000434404865"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2301"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:17:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8sul529yp"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="
+        }
+      ]
+    },
+    {
+      "Route": "index.l8sul529yp.html",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15010"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:17:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8sul529yp"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="
+        }
+      ]
+    },
+    {
+      "Route": "index.l8sul529yp.html.gz",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\1rgqet3r27-l8sul529yp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2301"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:17:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l8sul529yp"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QrD/WFIe6gW9CxP3MMIi1zabkiguUouEID8Xjp4IvyA="
+        }
+      ]
+    },
+    {
+      "Route": "web.7gb1nofirn.js",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-7gb1nofirn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000163398693"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6119"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HqLuCLx4lH+/n4sv5Lm3L9BjooweZq95le6QSRqE2lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:36:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7gb1nofirn"
+        },
+        {
+          "Name": "label",
+          "Value": "web.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM="
+        }
+      ]
+    },
+    {
+      "Route": "web.7gb1nofirn.js",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:36:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7gb1nofirn"
+        },
+        {
+          "Name": "label",
+          "Value": "web.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM="
+        }
+      ]
+    },
+    {
+      "Route": "web.7gb1nofirn.js.gz",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-7gb1nofirn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HqLuCLx4lH+/n4sv5Lm3L9BjooweZq95le6QSRqE2lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:36:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7gb1nofirn"
+        },
+        {
+          "Name": "label",
+          "Value": "web.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HqLuCLx4lH+/n4sv5Lm3L9BjooweZq95le6QSRqE2lo="
+        }
+      ]
+    },
+    {
+      "Route": "web.ah9pa7pj6o.css",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000537056928"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1861"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ah9pa7pj6o"
+        },
+        {
+          "Name": "label",
+          "Value": "web.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="
+        }
+      ]
+    },
+    {
+      "Route": "web.ah9pa7pj6o.css",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ah9pa7pj6o"
+        },
+        {
+          "Name": "label",
+          "Value": "web.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="
+        }
+      ]
+    },
+    {
+      "Route": "web.ah9pa7pj6o.css.gz",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1861"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ah9pa7pj6o"
+        },
+        {
+          "Name": "label",
+          "Value": "web.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0="
+        }
+      ]
+    },
+    {
+      "Route": "web.css",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000537056928"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1861"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="
+        }
+      ]
+    },
+    {
+      "Route": "web.css",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PhLqFCKGheAMyvqpFs105Gojo/6slPwOzJgKOK3phFc="
+        }
+      ]
+    },
+    {
+      "Route": "web.css.gz",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\4lfus3vpxl-ah9pa7pj6o.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1861"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:18:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-naRJ0VICNpKVUxv0m0dJqfTgQwBeXzgFj2CUQ7sr6e0="
+        }
+      ]
+    },
+    {
+      "Route": "web.js",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-7gb1nofirn.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000163398693"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6119"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HqLuCLx4lH+/n4sv5Lm3L9BjooweZq95le6QSRqE2lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:36:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM="
+        }
+      ]
+    },
+    {
+      "Route": "web.js",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35112"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:36:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM="
+        }
+      ]
+    },
+    {
+      "Route": "web.js.gz",
+      "AssetFile": "E:\\Dotnet-Projects\\whole_crm\\obj\\Debug\\net9.0\\compressed\\q1h6m8i29c-7gb1nofirn.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6119"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HqLuCLx4lH+/n4sv5Lm3L9BjooweZq95le6QSRqE2lo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 01 Jun 2025 12:36:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HqLuCLx4lH+/n4sv5Lm3L9BjooweZq95le6QSRqE2lo="
+        }
+      ]
+    }
+  ]
+}
