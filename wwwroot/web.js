@@ -3,7 +3,7 @@
 class ClothingCRM {
     constructor() {
         // Configure your backend API base URL
-        this.API_BASE_URL = "https://localhost:7172/api"; // Change this to your backend URL
+        this.API_BASE_URL = "https://crm-erp-2dc5c3c9fd8b.herokuapp.com/api"; // Change this to your backend URL
 
         this.products = [];
         this.customers = [];
