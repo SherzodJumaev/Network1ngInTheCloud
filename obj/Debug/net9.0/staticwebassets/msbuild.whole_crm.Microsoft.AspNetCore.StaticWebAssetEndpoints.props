@@ -12,12 +12,6 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l8sul529yp"},{"Name":"integrity","Value":"sha256-i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU="},{"Name":"label","Value":"_content/whole_crm/index.html"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"15010"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022i0xWDPoheJLb6EL6QrmQlIodavJ9mdQ0bEGrf7m19iU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:17:45 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/whole_crm/web.7gb1nofirn.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7gb1nofirn"},{"Name":"integrity","Value":"sha256-ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM="},{"Name":"label","Value":"_content/whole_crm/web.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35112"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:36:08 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/whole_crm/web.ah9pa7pj6o.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -33,8 +27,14 @@
     <StaticWebAssetEndpoint Include="_content/whole_crm/web.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35112"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022ycj4kUw8ysvzl5GcELpQ9Pjg0uhOadtHKahya7WoBrM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 12:36:08 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-mhPs7ZrQMLxNoyZ95AsQcE1ZV7BhWDMgCQZc3yM7a5k="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"35130"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mhPs7ZrQMLxNoyZ95AsQcE1ZV7BhWDMgCQZc3yM7a5k=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 14:17:25 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/whole_crm/web.m5pxeiodzy.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m5pxeiodzy"},{"Name":"integrity","Value":"sha256-mhPs7ZrQMLxNoyZ95AsQcE1ZV7BhWDMgCQZc3yM7a5k="},{"Name":"label","Value":"_content/whole_crm/web.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"35130"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022mhPs7ZrQMLxNoyZ95AsQcE1ZV7BhWDMgCQZc3yM7a5k=\u0022"},{"Name":"Last-Modified","Value":"Sun, 01 Jun 2025 14:17:25 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

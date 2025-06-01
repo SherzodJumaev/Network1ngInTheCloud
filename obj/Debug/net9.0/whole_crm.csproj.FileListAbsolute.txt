@@ -127,7 +127,6 @@ E:\Dotnet-Projects\whole_crm\bin\Debug\net9.0\zh-Hant\Microsoft.CodeAnalysis.Wor
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\scopedcss\bundle\whole_crm.styles.css
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\1rgqet3r27-l8sul529yp.gz
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\4lfus3vpxl-ah9pa7pj6o.gz
-E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-7gb1nofirn.gz
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\staticwebassets.build.json
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\staticwebassets.development.json
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -143,3 +142,4 @@ E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\refint\whole_crm.dll
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\whole_crm.pdb
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\whole_crm.genruntimeconfig.cache
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\ref\whole_crm.dll
+E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-m5pxeiodzy.gz

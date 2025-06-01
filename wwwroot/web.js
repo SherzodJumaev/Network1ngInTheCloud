@@ -163,6 +163,7 @@ class ClothingCRM {
     async fetchDashboardData() {
         try {
             const data = await this.apiRequest("/Dashboard");
+            console.log("today ==> " + data.todaysSales)
             return data;
         } catch (error) {
             // Fallback to calculated data
@@ -391,8 +392,6 @@ class ClothingCRM {
         const sortedProducts = [...this.products]
             .sort((a, b) => (b.revenue || 0) - (a.revenue || 0))
             .slice(0, 5);
-
-        console.log(sortedProducts);
 
         tbody.innerHTML = sortedProducts
             .map(

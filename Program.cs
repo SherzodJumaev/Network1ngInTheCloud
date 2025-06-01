@@ -53,6 +53,9 @@ app.UseRouting();
 app.UseAuthorization(); // optional
 app.MapControllers();
 
+app.UseStaticFiles();
+app.MapFallbackToFile("index.html");
+
 using (var seedScope = app.Services.CreateScope())
 {
     var context = seedScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
