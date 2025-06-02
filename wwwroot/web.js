@@ -3,7 +3,7 @@
 class ClothingCRM {
     constructor() {
         // Configure your backend API base URL
-        this.API_BASE_URL = "https://crm-erp-2dc5c3c9fd8b.herokuapp.com/api"; // Change this to your backend URL
+        this.API_BASE_URL = "https://localhost:7172/api"; // Change this to your backend URL
 
         this.products = [];
         this.customers = [];
@@ -35,7 +35,9 @@ class ClothingCRM {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
 
+            // response.forEach(r => console.log(r));
             const data = await response.json();
+            // console.log(data)
             return data;
         } catch (error) {
             console.error("API Request failed:", error);
@@ -82,7 +84,7 @@ class ClothingCRM {
         return data;
     }
 
-    async deleteProduct(id) {
+    async deleteProductAPI(id) {
         const data = await this.apiRequest(`/Products/${id}`, {
             method: "DELETE",
         });
@@ -163,7 +165,8 @@ class ClothingCRM {
     async fetchDashboardData() {
         try {
             const data = await this.apiRequest("/Dashboard");
-            console.log("today ==> " + data.todaysSales)
+            // console.log("today ==> " + data.todaysSales);
+            console.log(data)
             return data;
         } catch (error) {
             // Fallback to calculated data
@@ -267,11 +270,12 @@ class ClothingCRM {
         //     .addEventListener("click", () => this.clearCustomerForm());
 
         // Search
-        document
-            .querySelector(".search-input")
-            .addEventListener("input", (e) =>
+        const searchInput = document.querySelector(".search-input");
+        if (searchInput) {
+            searchInput.addEventListener("input", (e) =>
                 this.handleSearch(e.target.value)
             );
+        }
     }
 
     showLoadingState() {
@@ -342,6 +346,7 @@ class ClothingCRM {
     async updateDashboard() {
         try {
             const dashboardData = await this.fetchDashboardData();
+            console.log(dashboardData)
 
             document.getElementById("todays-sales").textContent =
                 dashboardData.todaysSales?.toFixed(2) || "00.0";
@@ -355,7 +360,7 @@ class ClothingCRM {
             await this.loadTopProducts();
         } catch (error) {
             // Fallback to local calculation
-            this.updateDashboardFallback();
+            this.upda();
         }
     }
 
@@ -376,16 +381,16 @@ class ClothingCRM {
         };
     }
 
-    updateDashboardFallback() {
-        const data = this.calculateDashboardData();
-        document.getElementById("todays-sales").textContent =
-            data.todaysSales.toFixed(2);
-        document.getElementById("total-orders").textContent = data.totalOrders;
-        document.getElementById("items-sold").textContent = data.itemsSold;
-        document.getElementById("new-customers").textContent =
-            data.newCustomers;
-        this.loadTopProducts();
-    }
+    // updateDashboardFallback() {
+    //     const data = this.calculateDashboardData();
+    //     document.getElementById("todays-sales").textContent =
+    //         data.todaysSales.toFixed(2);
+    //     document.getElementById("total-orders").textContent = data.totalOrders;
+    //     document.getElementById("items-sold").textContent = data.itemsSold;
+    //     document.getElementById("new-customers").textContent =
+    //         data.newCustomers;
+    //     this.loadTopProducts();
+    // }
 
     async loadTopProducts() {
         const tbody = document.getElementById("top-products-tbody");
@@ -741,7 +746,7 @@ class ClothingCRM {
     async deleteProduct(id) {
         if (confirm("Are you sure you want to delete this product?")) {
             try {
-                await this.deleteProduct(id);
+                await this.deleteProductAPI(id); // Correct API call
                 await this.refreshProducts();
                 this.showNotification(
                     "Product deleted successfully!",

@@ -95,7 +95,7 @@ namespace whole_crm.Data
             for (int i = 0; i < 27; i++)
             {
                 var customer = customers[random.Next(customers.Count)];
-                var orderDate = DateTime.UtcNow.AddDays(-random.Next(30));
+                var orderDate = DateTime.UtcNow.AddDays(-random.Next(3));
 
                 var order = new Order
                 {
