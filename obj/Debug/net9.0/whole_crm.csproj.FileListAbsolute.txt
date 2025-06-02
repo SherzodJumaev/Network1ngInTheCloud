@@ -156,4 +156,4 @@ E:\Dotnet-Projects\whole_crm\bin\Debug\net9.0\publish\publish\whole_crm.staticwe
 E:\Dotnet-Projects\whole_crm\bin\Debug\net9.0\publish\whole_crm.deps.json
 E:\Dotnet-Projects\whole_crm\bin\Debug\net9.0\publish\whole_crm.runtimeconfig.json
 E:\Dotnet-Projects\whole_crm\bin\Debug\net9.0\publish\whole_crm.staticwebassets.endpoints.json
-E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-uk56hs9o44.gz
+E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-0tbr31odoy.gz

@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>uk56hs9o44</Fingerprint>
-      <Integrity>Qm1c690jkEqQMRzrfGWX89LQ5u+ArgvpS6S8DnTC07U=</Integrity>
+      <Fingerprint>0tbr31odoy</Fingerprint>
+      <Integrity>fEQCGbpN67z1nzpF3T5sDz4UwXfkTJKvJUFkEBcmOws=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\web.js'))</OriginalItemSpec>
