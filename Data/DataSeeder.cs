@@ -70,18 +70,18 @@ namespace whole_crm.Data
 
             var customers = new List<Customer>
             {
-                new Customer { FirstName = "John", LastName = "Doe", Email = "john.doe@email.com", Phone = "555-0101", CreatedAt = DateTime.UtcNow.AddDays(-30) },
-                new Customer { FirstName = "Jane", LastName = "Smith", Email = "jane.smith@email.com", Phone = "555-0102", CreatedAt = DateTime.UtcNow.AddDays(-25) },
-                new Customer { FirstName = "Mike", LastName = "Johnson", Email = "mike.j@email.com", Phone = "555-0103", CreatedAt = DateTime.UtcNow.AddDays(-20) },
-                new Customer { FirstName = "Sarah", LastName = "Wilson", Email = "sarah.w@email.com", Phone = "555-0104", CreatedAt = DateTime.UtcNow.AddDays(-15) },
-                new Customer { FirstName = "David", LastName = "Brown", Email = "david.b@email.com", Phone = "555-0105", CreatedAt = DateTime.UtcNow.AddDays(-10) },
-                new Customer { FirstName = "Emily", LastName = "Davis", Email = "emily.d@email.com", Phone = "555-0106", CreatedAt = DateTime.UtcNow.AddDays(-5) },
-                new Customer { FirstName = "Robert", LastName = "Miller", Email = "robert.m@email.com", Phone = "555-0107", CreatedAt = DateTime.UtcNow.AddDays(-3) },
-                new Customer { FirstName = "Lisa", LastName = "Anderson", Email = "lisa.a@email.com", Phone = "555-0108", CreatedAt = DateTime.UtcNow.AddDays(-2) },
-                new Customer { FirstName = "Mark", LastName = "Taylor", Email = "mark.t@email.com", Phone = "555-0109", CreatedAt = DateTime.UtcNow.AddDays(-1) },
-                new Customer { FirstName = "Anna", LastName = "White", Email = "anna.w@email.com", Phone = "555-0110", CreatedAt = DateTime.UtcNow },
-                new Customer { FirstName = "Chris", LastName = "Garcia", Email = "chris.g@email.com", Phone = "555-0111", CreatedAt = DateTime.UtcNow },
-                new Customer { FirstName = "Maria", LastName = "Lopez", Email = "maria.l@email.com", Phone = "555-0112", CreatedAt = DateTime.UtcNow }
+                new Customer { FirstName = "John", LastName = "Doe", Email = "john.doe@email.com", Phone = "77 555-01-01", CreatedAt = DateTime.UtcNow.AddDays(-30) },
+                new Customer { FirstName = "Jane", LastName = "Smith", Email = "jane.smith@email.com", Phone = "90 555-01-02", CreatedAt = DateTime.UtcNow.AddDays(-25) },
+                new Customer { FirstName = "Mike", LastName = "Johnson", Email = "mike.j@email.com", Phone = "91 555-01-03", CreatedAt = DateTime.UtcNow.AddDays(-20) },
+                new Customer { FirstName = "Sarah", LastName = "Wilson", Email = "sarah.w@email.com", Phone = "77 555-01-04", CreatedAt = DateTime.UtcNow.AddDays(-15) },
+                new Customer { FirstName = "David", LastName = "Brown", Email = "david.b@email.com", Phone = "99 555-01-05", CreatedAt = DateTime.UtcNow.AddDays(-10) },
+                new Customer { FirstName = "Emily", LastName = "Davis", Email = "emily.d@email.com", Phone = "91 555-01-06", CreatedAt = DateTime.UtcNow.AddDays(-5) },
+                new Customer { FirstName = "Robert", LastName = "Miller", Email = "robert.m@email.com", Phone = "90 555-01-07", CreatedAt = DateTime.UtcNow.AddDays(-3) },
+                new Customer { FirstName = "Lisa", LastName = "Anderson", Email = "lisa.a@email.com", Phone = "78 555-01-08", CreatedAt = DateTime.UtcNow.AddDays(-2) },
+                new Customer { FirstName = "Mark", LastName = "Taylor", Email = "mark.t@email.com", Phone = "91 555-01-09", CreatedAt = DateTime.UtcNow.AddDays(-1) },
+                new Customer { FirstName = "Anna", LastName = "White", Email = "anna.w@email.com", Phone = "99 555-01-10", CreatedAt = DateTime.UtcNow },
+                new Customer { FirstName = "Chris", LastName = "Garcia", Email = "chris.g@email.com", Phone = "91 555-01-11", CreatedAt = DateTime.UtcNow },
+                new Customer { FirstName = "Maria", LastName = "Lopez", Email = "maria.l@email.com", Phone = "94 555-01-12", CreatedAt = DateTime.UtcNow }
             };
 
             context.Customers.AddRange(customers);

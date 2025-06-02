@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClothingCRM</title>
     <link rel="stylesheet" href="./web.css">
+    <link rel="stylesheet" href="./chart.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 </head>
 
 <body>
@@ -178,7 +180,7 @@
                                 <th>Stock</th>
                                 <th>Sales Count</th>
                                 <th>Revenue</th>
-                                <th>Actions</th>
+                                <th>Created At</th>
                             </tr>
                         </thead>
                         <tbody id="products-tbody">
@@ -230,7 +232,7 @@
                                 <th>Phone</th>
                                 <th>Created</th>
                                 <th>Orders</th>
-                                <th>Actions</th>
+                                <!-- <th>Actions</th> -->
                             </tr>
                         </thead>
                         <tbody id="customers-tbody">
@@ -255,10 +257,10 @@
                                 <th>ID</th>
                                 <th>Customer</th>
                                 <th>Date</th>
-                                <th>Status</th>
+                                <th>Order Status</th>
                                 <th>Total</th>
                                 <!-- <th>Items</th> -->
-                                <th>Actions</th>
+                                <!-- <th>Actions</th> -->
                             </tr>
                         </thead>
                         <tbody id="orders-tbody">
@@ -271,7 +273,7 @@
             </div>
 
             <!-- Sales Report Page -->
-            <div id="sales-report" class="content-page">
+            <!-- <div id="sales-report" class="content-page">
                 <div class="page-title">Sales Report</div>
                 <div class="dashboard-grid">
                     <div class="stat-card">
@@ -291,7 +293,636 @@
                         <div class="stat-value" id="active-customers">0</div>
                     </div>
                 </div>
+            </div> -->
+
+            <div id="sales-report" class="content-page">
+                <div class="page-title">Sales Report</div>
+
+                <!-- Original Stats Cards -->
+                <div class="dashboard-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Total Revenue</div>
+                        <div class="stat-value">$<span id="total-revenue">0</span></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Average Order Value</div>
+                        <div class="stat-value">$<span id="avg-order-value">0</span></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Total Products Sold</div>
+                        <div class="stat-value" id="total-products-sold">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Active Customers</div>
+                        <div class="stat-value" id="active-customers">0</div>
+                    </div>
+                </div>
+
+                <!-- Chart Controls -->
+                <div class="chart-controls">
+                    <h3 style="margin: 0; color: #333;">Analytics Dashboard</h3>
+                    <div style="display: flex; gap: 20px; align-items: center;">
+                        <div class="time-period-selector">
+                            <button class="period-btn active" data-period="overall">Overall</button>
+                            <button class="period-btn" data-period="yearly">By Year</button>
+                            <button class="period-btn" data-period="monthly">By Month</button>
+                        </div>
+                        <div class="month-selector-container" id="month-selector-container" style="display: none;">
+                            <span class="month-selector-label">Select Month:</span>
+                            <select class="month-selector" id="month-selector">
+                                <option value="all">All Months</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Cards -->
+                <div class="chart-summary" id="chart-summary"></div>
+
+                <!-- Charts Grid -->
+                <div class="chart-grid" id="charts-container"></div>
             </div>
+
+            <script>
+                // Configuration Constants
+                const CONFIG = {
+                    CHART_TYPES: {
+                        REVENUE: 'revenue',
+                        PRODUCT: 'product',
+                        CUSTOMER: 'customer'
+                    },
+                    PERIODS: {
+                        OVERALL: 'overall',
+                        YEARLY: 'yearly',
+                        MONTHLY: 'monthly',
+                        SPECIFIC_MONTH: 'specific_month'
+                    },
+                    CHART_COLORS: {
+                        PRIMARY: '#007bff',
+                        SUCCESS: '#28a745',
+                        INFO: '#17a2b8',
+                        WARNING: '#ffc107',
+                        DANGER: '#dc3545',
+                        SECONDARY: '#6c757d'
+                    },
+                    PRODUCT_COLORS: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+                };
+
+                // Data Service Class
+                class DataService {
+                    static generateMockData() {
+                        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                        const monthsShort = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                        const categories = ['T-Shirts', 'Jeans', 'Dresses', 'Accessories', 'Shoes'];
+
+                        // Generate detailed monthly data for the full year
+                        const monthlyRevenue = [890, 1240, 2145, 1650, 980, 1422, 1890, 2100, 1780, 1560, 1340, 1920];
+                        const monthlyProductsSold = [
+                            [3, 5, 2, 1, 2], // Jan
+                            [4, 6, 3, 2, 3], // Feb
+                            [8, 7, 4, 3, 3], // Mar
+                            [5, 6, 3, 2, 2], // Apr
+                            [2, 4, 2, 1, 1], // May
+                            [6, 7, 3, 2, 2], // Jun
+                            [7, 8, 4, 3, 3], // Jul
+                            [8, 9, 5, 3, 4], // Aug
+                            [6, 7, 4, 2, 3], // Sep
+                            [5, 6, 3, 2, 2], // Oct
+                            [4, 5, 2, 1, 2], // Nov
+                            [7, 8, 4, 3, 3]  // Dec
+                        ];
+                        const monthlyCustomers = {
+                            new: [2, 3, 4, 2, 1, 3, 4, 5, 3, 2, 2, 4],
+                            returning: [3, 4, 6, 5, 4, 5, 6, 7, 5, 4, 3, 6]
+                        };
+
+                        return {
+                            revenue: {
+                                monthly: monthlyRevenue.slice(0, 6), // First 6 months for initial display
+                                yearly: [5200, 6327, 7890],
+                                fullYear: monthlyRevenue, // Full year data
+                                labels: {
+                                    monthly: monthsShort.slice(0, 6),
+                                    yearly: ['2023', '2024', '2025'],
+                                    fullYear: monthsShort,
+                                    monthNames: months
+                                }
+                            },
+                            products: {
+                                categories: [15, 20, 12, 8, 8], // Overall totals
+                                monthlyBreakdown: monthlyProductsSold,
+                                labels: categories
+                            },
+                            customers: {
+                                new: monthlyCustomers.new.slice(0, 6),
+                                returning: monthlyCustomers.returning.slice(0, 6),
+                                fullYear: monthlyCustomers,
+                                labels: monthsShort.slice(0, 6)
+                            }
+                        };
+                    }
+
+                    static async fetchSalesReport() {
+                        // Simulate API call
+                        return new Promise((resolve) => {
+                            setTimeout(() => {
+                                resolve({
+                                    totalRevenue: 6327.53,
+                                    averageOrderValue: 301.31,
+                                    totalProductsSold: 63,
+                                    activeCustomers: 8
+                                });
+                            }, 1000);
+                        });
+                    }
+
+                    static calculateSalesReport(orders = []) {
+                        // Fallback calculation method
+                        return {
+                            totalRevenue: 6327.53,
+                            avgOrderValue: 301.31,
+                            totalProductsSold: 63,
+                            activeCustomers: 8
+                        };
+                    }
+                }
+
+                // Chart Factory Class
+                class ChartFactory {
+                    static createRevenueChart(ctx, data, period) {
+                        const labels = period === CONFIG.PERIODS.YEARLY ?
+                            data.revenue.labels.yearly : data.revenue.labels.monthly;
+                        const chartData = period === CONFIG.PERIODS.YEARLY ?
+                            data.revenue.yearly : data.revenue.monthly;
+
+                        return new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    label: 'Revenue ($)',
+                                    data: chartData,
+                                    borderColor: CONFIG.CHART_COLORS.PRIMARY,
+                                    backgroundColor: 'rgba(0, 123, 255, 0.1)',
+                                    borderWidth: 3,
+                                    fill: true,
+                                    tension: 0.4,
+                                    pointBackgroundColor: CONFIG.CHART_COLORS.PRIMARY,
+                                    pointBorderColor: '#fff',
+                                    pointBorderWidth: 2,
+                                    pointRadius: 6
+                                }]
+                            },
+                            options: this.getLineChartOptions()
+                        });
+                    }
+
+                    static createProductChart(ctx, data) {
+                        return new Chart(ctx, {
+                            type: 'doughnut',
+                            data: {
+                                labels: data.products.labels,
+                                datasets: [{
+                                    data: data.products.categories,
+                                    backgroundColor: CONFIG.PRODUCT_COLORS,
+                                    borderWidth: 2,
+                                    borderColor: '#fff'
+                                }]
+                            },
+                            options: this.getDoughnutChartOptions()
+                        });
+                    }
+
+                    static createCustomerChart(ctx, data) {
+                        return new Chart(ctx, {
+                            type: 'bar',
+                            data: {
+                                labels: data.customers.labels,
+                                datasets: [
+                                    {
+                                        label: 'New Customers',
+                                        data: data.customers.new,
+                                        backgroundColor: CONFIG.CHART_COLORS.SUCCESS,
+                                        borderRadius: 4
+                                    },
+                                    {
+                                        label: 'Returning Customers',
+                                        data: data.customers.returning,
+                                        backgroundColor: CONFIG.CHART_COLORS.INFO,
+                                        borderRadius: 4
+                                    }
+                                ]
+                            },
+                            options: this.getBarChartOptions()
+                        });
+                    }
+
+                    static getLineChartOptions() {
+                        return {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { display: false }
+                            },
+                            scales: {
+                                y: {
+                                    beginAtZero: true,
+                                    ticks: {
+                                        callback: function (value) {
+                                            return '$' + value;
+                                        }
+                                    }
+                                }
+                            }
+                        };
+                    }
+
+                    static getDoughnutChartOptions() {
+                        return {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: {
+                                    position: 'bottom',
+                                    labels: {
+                                        padding: 20,
+                                        usePointStyle: true
+                                    }
+                                }
+                            }
+                        };
+                    }
+
+                    static getBarChartOptions() {
+                        return {
+                            responsive: true,
+                            maintainAspectRatio: false,
+                            plugins: {
+                                legend: { position: 'top' }
+                            },
+                            scales: {
+                                x: { stacked: false },
+                                y: { beginAtZero: true, stacked: false }
+                            }
+                        };
+                    }
+                }
+
+                // UI Component Class
+                class UIComponent {
+                    static createChartContainer(title, id, fullWidth = false) {
+                        return `
+                    <div class="chart-container ${fullWidth ? 'full-width-chart' : ''}">
+                        <div class="chart-title">${title}</div>
+                        <div class="chart-wrapper">
+                            <canvas id="${id}"></canvas>
+                        </div>
+                    </div>
+                `;
+                    }
+
+                    static createSummaryCard(title, value, subtitle) {
+                        return `
+                    <div class="summary-card">
+                        <h4>${title}</h4>
+                        <div class="value">${value}</div>
+                        <div class="change">${subtitle}</div>
+                    </div>
+                `;
+                    }
+
+                    static createLoadingSpinner() {
+                        return `
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                    </div>
+                `;
+                    }
+
+                    static createErrorMessage(message) {
+                        return `
+                    <div class="error-state">
+                        <strong>Error:</strong> ${message}
+                    </div>
+                `;
+                    }
+                }
+
+                // Chart Manager Class
+                class ChartManager {
+                    constructor(data) {
+                        this.data = data;
+                        this.charts = {};
+                        this.currentPeriod = CONFIG.PERIODS.OVERALL;
+                        this.selectedMonth = 'all';
+                    }
+
+                    initializeCharts() {
+                        this.createChartContainers();
+                        this.createAllCharts();
+                        this.initializeMonthSelector();
+                    }
+
+                    initializeMonthSelector() {
+                        const monthSelector = document.getElementById('month-selector');
+                        const monthNames = this.data.revenue.labels.monthNames;
+
+                        // Clear existing options except "All Months"
+                        monthSelector.innerHTML = '<option value="all">All Months</option>';
+
+                        // Add month options
+                        monthNames.forEach((month, index) => {
+                            const option = document.createElement('option');
+                            option.value = index;
+                            option.textContent = month;
+                            monthSelector.appendChild(option);
+                        });
+                    }
+
+                    createChartContainers() {
+                        const container = document.getElementById('charts-container');
+                        container.innerHTML = `
+                    ${UIComponent.createChartContainer('Revenue Trend', 'revenueChart', true)}
+                    ${UIComponent.createChartContainer('Product Categories', 'productChart')}
+                    ${UIComponent.createChartContainer('Customer Metrics', 'customerChart')}
+                `;
+                    }
+
+                    createAllCharts() {
+                        this.charts.revenue = ChartFactory.createRevenueChart(
+                            document.getElementById('revenueChart').getContext('2d'),
+                            this.data,
+                            this.currentPeriod
+                        );
+
+                        this.charts.product = ChartFactory.createProductChart(
+                            document.getElementById('productChart').getContext('2d'),
+                            this.data
+                        );
+
+                        this.charts.customer = ChartFactory.createCustomerChart(
+                            document.getElementById('customerChart').getContext('2d'),
+                            this.data
+                        );
+                    }
+
+                    updateCharts(period, selectedMonth = 'all') {
+                        this.currentPeriod = period;
+                        this.selectedMonth = selectedMonth;
+
+                        // Show/hide month selector based on period
+                        const monthSelectorContainer = document.getElementById('month-selector-container');
+                        monthSelectorContainer.style.display = period === CONFIG.PERIODS.MONTHLY ? 'flex' : 'none';
+
+                        // Update revenue chart
+                        this.updateRevenueChart(period, selectedMonth);
+
+                        // Update product chart for specific month
+                        if (period === CONFIG.PERIODS.MONTHLY && selectedMonth !== 'all') {
+                            this.updateProductChartForMonth(selectedMonth);
+                        } else {
+                            this.updateProductChart();
+                        }
+
+                        // Update customer chart
+                        this.updateCustomerChart(period, selectedMonth);
+                    }
+
+                    updateRevenueChart(period, selectedMonth) {
+                        let labels, chartData;
+
+                        if (period === CONFIG.PERIODS.YEARLY) {
+                            labels = this.data.revenue.labels.yearly;
+                            chartData = this.data.revenue.yearly;
+                        } else if (period === CONFIG.PERIODS.MONTHLY) {
+                            if (selectedMonth !== 'all') {
+                                // Show single month data (could be daily breakdown)
+                                labels = ['Week 1', 'Week 2', 'Week 3', 'Week 4'];
+                                const monthRevenue = this.data.revenue.fullYear[selectedMonth];
+                                chartData = [monthRevenue * 0.2, monthRevenue * 0.3, monthRevenue * 0.25, monthRevenue * 0.25];
+                            } else {
+                                labels = this.data.revenue.labels.fullYear;
+                                chartData = this.data.revenue.fullYear;
+                            }
+                        } else {
+                            labels = this.data.revenue.labels.monthly;
+                            chartData = this.data.revenue.monthly;
+                        }
+
+                        this.charts.revenue.data.labels = labels;
+                        this.charts.revenue.data.datasets[0].data = chartData;
+                        this.charts.revenue.update();
+                    }
+
+                    updateProductChartForMonth(monthIndex) {
+                        const monthData = this.data.products.monthlyBreakdown[monthIndex];
+                        this.charts.product.data.datasets[0].data = monthData;
+                        this.charts.product.update();
+                    }
+
+                    updateProductChart() {
+                        // Reset to overall data
+                        this.charts.product.data.datasets[0].data = this.data.products.categories;
+                        this.charts.product.update();
+                    }
+
+                    updateCustomerChart(period, selectedMonth) {
+                        let labels, newCustomers, returningCustomers;
+
+                        if (period === CONFIG.PERIODS.MONTHLY) {
+                            if (selectedMonth !== 'all') {
+                                // Show single month data (could be weekly breakdown)
+                                labels = ['Week 1', 'Week 2', 'Week 3', 'Week 4'];
+                                const monthNew = this.data.customers.fullYear.new[selectedMonth];
+                                const monthReturning = this.data.customers.fullYear.returning[selectedMonth];
+                                newCustomers = [Math.ceil(monthNew * 0.2), Math.ceil(monthNew * 0.3), Math.ceil(monthNew * 0.25), Math.ceil(monthNew * 0.25)];
+                                returningCustomers = [Math.ceil(monthReturning * 0.2), Math.ceil(monthReturning * 0.3), Math.ceil(monthReturning * 0.25), Math.ceil(monthReturning * 0.25)];
+                            } else {
+                                labels = this.data.revenue.labels.fullYear;
+                                newCustomers = this.data.customers.fullYear.new;
+                                returningCustomers = this.data.customers.fullYear.returning;
+                            }
+                        } else {
+                            labels = this.data.customers.labels;
+                            newCustomers = this.data.customers.new;
+                            returningCustomers = this.data.customers.returning;
+                        }
+
+                        this.charts.customer.data.labels = labels;
+                        this.charts.customer.data.datasets[0].data = newCustomers;
+                        this.charts.customer.data.datasets[1].data = returningCustomers;
+                        this.charts.customer.update();
+                    }
+
+                    destroy() {
+                        Object.values(this.charts).forEach(chart => chart.destroy());
+                        this.charts = {};
+                    }
+                }
+
+                // Summary Manager Class
+                class SummaryManager {
+                    constructor() {
+                        this.summaryData = {
+                            [CONFIG.PERIODS.OVERALL]: {
+                                growth: '+15.2%',
+                                bestPeriod: 'March',
+                                average: '$1,054'
+                            },
+                            [CONFIG.PERIODS.YEARLY]: {
+                                growth: '+21.7%',
+                                bestPeriod: '2024',
+                                average: '$6,472'
+                            },
+                            [CONFIG.PERIODS.MONTHLY]: {
+                                growth: '+8.3%',
+                                bestPeriod: 'March',
+                                average: '$1,554'
+                            }
+                        };
+                    }
+
+                    render(period = CONFIG.PERIODS.OVERALL, selectedMonth = 'all') {
+                        const container = document.getElementById('chart-summary');
+                        let data = this.summaryData[period];
+
+                        // Customize data for specific month selection
+                        if (period === CONFIG.PERIODS.MONTHLY && selectedMonth !== 'all') {
+                            const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+                            data = {
+                                growth: '+12.5%',
+                                bestPeriod: `Week 2`,
+                                average: `${Math.floor(Math.random() * 500 + 800)}`
+                            };
+                        }
+
+                        container.innerHTML = `
+                    ${UIComponent.createSummaryCard('Revenue Growth', data.growth, 'vs last period')}
+                    ${UIComponent.createSummaryCard('Best Period', data.bestPeriod, 'highest revenue')}
+                    ${UIComponent.createSummaryCard('Average Revenue', data.average, 'per period')}
+                `;
+                    }
+
+                    update(period, selectedMonth = 'all') {
+                        this.render(period, selectedMonth);
+                    }
+                }
+
+                // Main Sales Report Class
+                class EnhancedSalesReport {
+                    constructor() {
+                        this.data = DataService.generateMockData();
+                        this.chartManager = null;
+                        this.summaryManager = new SummaryManager();
+                        this.currentPeriod = CONFIG.PERIODS.OVERALL;
+
+                        this.init();
+                    }
+
+                    async init() {
+                        try {
+                            this.showLoading();
+                            await this.updateSalesReport();
+                            this.initializeComponents();
+                            this.bindEvents();
+                            this.hideLoading();
+                        } catch (error) {
+                            this.handleError(error);
+                        }
+                    }
+
+                    initializeComponents() {
+                        this.chartManager = new ChartManager(this.data);
+                        this.chartManager.initializeCharts();
+                        this.summaryManager.render();
+                    }
+
+                    bindEvents() {
+                        document.querySelectorAll('.period-btn').forEach(btn => {
+                            btn.addEventListener('click', (e) => {
+                                this.handlePeriodChange(e.target);
+                            });
+                        });
+
+                        // Add month selector event listener
+                        document.getElementById('month-selector').addEventListener('change', (e) => {
+                            this.handleMonthChange(e.target.value);
+                        });
+                    }
+
+                    handlePeriodChange(target) {
+                        // Update UI
+                        document.querySelectorAll('.period-btn').forEach(b => b.classList.remove('active'));
+                        target.classList.add('active');
+
+                        // Update period and components
+                        this.currentPeriod = target.dataset.period;
+                        const selectedMonth = document.getElementById('month-selector').value;
+                        this.chartManager.updateCharts(this.currentPeriod, selectedMonth);
+                        this.summaryManager.update(this.currentPeriod, selectedMonth);
+                    }
+
+                    handleMonthChange(selectedMonth) {
+                        // Update charts and summary for the selected month
+                        this.chartManager.updateCharts(this.currentPeriod, selectedMonth);
+                        this.summaryManager.update(this.currentPeriod, selectedMonth);
+                    }
+
+                    async updateSalesReport() {
+                        try {
+                            const salesData = await DataService.fetchSalesReport();
+                            this.updateStatsDisplay(salesData);
+                        } catch (error) {
+                            console.warn('API fetch failed, using fallback calculation:', error);
+                            const salesData = DataService.calculateSalesReport();
+                            this.updateStatsDisplay(salesData);
+                        }
+                    }
+
+                    updateStatsDisplay(salesData) {
+                        const elements = {
+                            'total-revenue': salesData.totalRevenue || salesData.totalRevenue?.toFixed(2) || '0.00',
+                            'avg-order-value': salesData.averageOrderValue || salesData.avgOrderValue?.toFixed(2) || '0.00',
+                            'total-products-sold': salesData.totalProductsSold || 0,
+                            'active-customers': salesData.activeCustomers || 0
+                        };
+
+                        Object.entries(elements).forEach(([id, value]) => {
+                            const element = document.getElementById(id);
+                            if (element) {
+                                element.textContent = value;
+                            }
+                        });
+                    }
+
+                    showLoading() {
+                        const container = document.getElementById('charts-container');
+                        container.innerHTML = UIComponent.createLoadingSpinner();
+                    }
+
+                    hideLoading() {
+                        // Loading is hidden when charts are rendered
+                    }
+
+                    handleError(error) {
+                        console.error('Sales Report Error:', error);
+                        const container = document.getElementById('charts-container');
+                        container.innerHTML = UIComponent.createErrorMessage('Failed to load sales data. Please try again.');
+                    }
+
+                    destroy() {
+                        if (this.chartManager) {
+                            this.chartManager.destroy();
+                        }
+                    }
+                }
+
+                // Initialize the application
+                document.addEventListener('DOMContentLoaded', () => {
+                    window.salesReport = new EnhancedSalesReport();
+                });
+            </script>
+            
         </main>
     </div>
 

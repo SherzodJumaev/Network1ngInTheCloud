@@ -166,7 +166,7 @@ class ClothingCRM {
         try {
             const data = await this.apiRequest("/Dashboard");
             // console.log("today ==> " + data.todaysSales);
-            console.log(data)
+            // console.log(data)
             return data;
         } catch (error) {
             // Fallback to calculated data
@@ -346,7 +346,7 @@ class ClothingCRM {
     async updateDashboard() {
         try {
             const dashboardData = await this.fetchDashboardData();
-            console.log(dashboardData)
+            // console.log(dashboardData)
 
             document.getElementById("todays-sales").textContent =
                 dashboardData.todaysSales?.toFixed(2) || "00.0";
@@ -418,6 +418,7 @@ class ClothingCRM {
 
         const filteredProducts = this.products.filter((product) => {
             // Exclude product if any of these fields are empty, 0, null or undefined
+
             return (
                 product.id != null &&
                 product.id !== 0 &&
@@ -437,8 +438,11 @@ class ClothingCRM {
         });
 
         tbody.innerHTML = filteredProducts
-            .map(
-                (product) => `
+            .map((product) => {
+                const date = new Date(product.createdAt);
+                const formattedDate = date.toLocaleDateString("en-GB"); // dd/mm/yyyy format
+
+                return `
             <tr>
                 <td>${product.id}</td>
                 <td>${product.name}</td>
@@ -447,14 +451,10 @@ class ClothingCRM {
                 <td>${product.stockQuantity}</td>
                 <td>${product.salesCount}</td>
                 <td>$${product.revenue.toFixed(2)}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger" onclick="crm.deleteProduct(${
-                        product.id
-                    })">Delete</button>
-                </td>
+                <td>${formattedDate}</td>
             </tr>
-        `
-            )
+        `;
+            })
             .join("");
     }
 
@@ -473,11 +473,6 @@ class ClothingCRM {
                     .split("T")[0]
                     .replace(/-/g, "/")}</td>
                 <td>${customer.orders.length || 0}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger" onclick="crm.deleteCustomer(${
-                        customer.id
-                    })">Delete</button>
-                </td>
             </tr>
         `
             )
@@ -486,6 +481,8 @@ class ClothingCRM {
 
     loadOrdersTable() {
         const tbody = document.getElementById("orders-tbody");
+
+        // this.orders.forEach(o => console.log(o))
 
         tbody.innerHTML = this.orders
             .map(
@@ -501,11 +498,6 @@ class ClothingCRM {
                     order.status
                 }</span></td>
                 <td>$${order.totalAmount.toFixed(2)}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger" onclick="crm.deleteOrder(${
-                        order.id
-                    })">Delete</button>
-                </td>
             </tr>
         `
             )
@@ -872,26 +864,29 @@ class ClothingCRM {
                 product.category.toLowerCase().includes(query)
         );
 
+        // filteredProducts.forEach((p) => console.log(p));
         const tbody = document.getElementById("products-tbody");
         tbody.innerHTML = filteredProducts
-            .map(
-                (product) => `
+            .map((product) => {
+                const date = new Date(product.createdAt);
+                const day = String(date.getDate()).padStart(2, "0");
+                const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are 0-based
+                const year = date.getFullYear();
+                const formattedDate = `${day}/${month}/${year}`;
+
+                return `
             <tr>
                 <td>${product.id}</td>
                 <td>${product.name}</td>
                 <td>${product.category}</td>
                 <td>$${product.price.toFixed(2)}</td>
-                <td>${product.stock}</td>
+                <td>${product.stockQuantity}</td>
                 <td>${product.salesCount || 0}</td>
                 <td>$${(product.revenue || 0).toFixed(2)}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger" onclick="crm.deleteProduct(${
-                        product.id
-                    })">Delete</button>
-                </td>
+                <td>${formattedDate}</td>
             </tr>
-        `
-            )
+        `;
+            })
             .join("");
     }
 
@@ -912,13 +907,11 @@ class ClothingCRM {
                 <td>${customer.firstName} ${customer.lastName}</td>
                 <td>${customer.email}</td>
                 <td>${customer.phone}</td>
-                <td>${customer.created}</td>
-                <td>${customer.orders || 0}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger" onclick="crm.deleteCustomer(${
-                        customer.id
-                    })">Delete</button>
-                </td>
+                <td>${new Date(customer.createdAt)
+                    .toISOString()
+                    .split("T")[0]
+                    .replace(/-/g, "/")}</td>
+                <td>${customer.orders.length || 0}</td>
             </tr>
         `
             )
@@ -926,33 +919,43 @@ class ClothingCRM {
     }
 
     filterOrders(query) {
-        const filteredOrders = this.orders.filter(
-            (order) =>
-                order.customerName.toLowerCase().includes(query) ||
-                order.status.toLowerCase().includes(query)
-        );
+        const filteredOrders = this.orders.filter((order) => {
+            const customerName = `${order.customer?.firstName || ""} ${
+                order.customer?.lastName || ""
+            }`.toLowerCase();
+            const status = order.status?.toLowerCase() || "";
+            return (
+                customerName.includes(query.toLowerCase()) ||
+                status.includes(query.toLowerCase())
+            );
+        });
+
+        // Optional: debug log
+        filteredOrders.forEach((o) => console.log(o));
 
         const tbody = document.getElementById("orders-tbody");
         tbody.innerHTML = filteredOrders
-            .map(
-                (order) => `
-            <tr>
-                <td>${order.id}</td>
-                <td>${order.customerName}</td>
-                <td>${order.date}</td>
-                <td><span class="status status-${order.status.toLowerCase()}">${
+            .map((order) => {
+                const dateObj = new Date(order.orderDate);
+                const day = String(dateObj.getDate()).padStart(2, "0");
+                const month = String(dateObj.getMonth() + 1).padStart(2, "0");
+                const year = dateObj.getFullYear();
+                const formattedDate = `${day}/${month}/${year}`;
+
+                return `
+                <tr>
+                    <td>${order.id}</td>
+                    <td>${order.customer.firstName} ${
+                    order.customer.lastName
+                }</td>
+                    <td>${formattedDate}</td>
+                    <td><span class="status status-${order.status.toLowerCase()}">${
                     order.status
                 }</span></td>
-                <td>$${order.total.toFixed(2)}</td>
-                <td>${order.items}</td>
-                <td>
-                    <button class="btn btn-sm btn-danger" onclick="crm.deleteOrder(${
-                        order.id
-                    })">Delete</button>
-                </td>
-            </tr>
-        `
-            )
+                    <td>$${order.totalAmount.toFixed(2)}</td>
+                </tr>
+            `;
+            })
             .join("");
     }
 

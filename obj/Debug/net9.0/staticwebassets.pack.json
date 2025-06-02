@@ -1,8 +1,16 @@
 {
   "Files": [
     {
+      "Id": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\chart.css",
+      "PackagePath": "staticwebassets\\chart.css"
+    },
+    {
       "Id": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\report.js",
+      "PackagePath": "staticwebassets\\report.js"
     },
     {
       "Id": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css",
