@@ -1,35 +1,38 @@
 name: Build and Deploy to Azure Web App
 
 on:
-  push:
-    branches:
-      - main  # or your default branch
+    push:
+        branches:
+            - main
 
 jobs:
-  build-and-deploy:
-    runs-on: windows-latest
+    build-and-deploy:
+        runs-on: windows-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '9.0.x'  # or '8.0.x' for stable
+            - name: Setup .NET
+              uses: actions/setup-dotnet@v4
+              with:
+                  dotnet-version: "9.0.x"
 
-      - name: Restore dependencies
-        run: dotnet restore
+            - name: Restore dependencies
+              run: dotnet restore
 
-      - name: Build
-        run: dotnet build --configuration Release --no-restore
+            - name: Restore workloads
+              run: dotnet workload restore
 
-      - name: Publish
-        run: dotnet publish --configuration Release --output ./publish
+            - name: Build
+              run: dotnet build --configuration Release --no-restore
 
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v3
-        with:
-          app-name: 'my-cloud-crm-app'
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: ./publish
+            - name: Publish
+              run: dotnet publish --configuration Release --output ./publish
+
+            - name: Deploy to Azure Web App
+              uses: azure/webapps-deploy@v3
+              with:
+                  app-name: "my-cloud-crm-app"
+                  publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+                  package: ${{ github.workspace }}/publish
