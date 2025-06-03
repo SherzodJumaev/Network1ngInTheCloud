@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Dotnet-Projects\\whole_crm\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|e:\\dotnet-projects\\whole_crm\\wwwroot\\web.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|solutionrelative:wwwroot\\web.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|e:\\dotnet-projects\\whole_crm\\wwwroot\\web.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|solutionrelative:wwwroot\\web.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|e:\\dotnet-projects\\whole_crm\\wwwroot\\report.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|solutionrelative:wwwroot\\report.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|e:\\dotnet-projects\\whole_crm\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|e:\\dotnet-projects\\whole_crm\\wwwroot\\chart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|solutionrelative:wwwroot\\chart.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|e:\\dotnet-projects\\whole_crm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A35E129-699D-8BFB-6F67-A45C93A4614C}|whole_crm.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "web.js",
+              "DocumentMoniker": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js",
+              "RelativeDocumentMoniker": "wwwroot\\web.js",
+              "ToolTip": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.js",
+              "RelativeToolTip": "wwwroot\\web.js",
+              "ViewState": "AgIAACYEAAAAAAAAAAAowDQEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-03T06:34:02.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "web.css",
+              "DocumentMoniker": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css",
+              "RelativeDocumentMoniker": "wwwroot\\web.css",
+              "ToolTip": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\web.css",
+              "RelativeToolTip": "wwwroot\\web.css",
+              "ViewState": "AgIAAOIBAAAAAAAAAAAywPEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-03T06:33:58.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "report.js",
+              "DocumentMoniker": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\report.js",
+              "RelativeDocumentMoniker": "wwwroot\\report.js",
+              "ToolTip": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\report.js",
+              "RelativeToolTip": "wwwroot\\report.js",
+              "ViewState": "AgIAAP4AAAAAAAAAAAAowAwBAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-03T06:33:54.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAAKQDAAAAAAAAAAAywLMDAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-06-03T06:33:49.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "chart.css",
+              "DocumentMoniker": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\chart.css",
+              "RelativeDocumentMoniker": "wwwroot\\chart.css",
+              "ToolTip": "E:\\Dotnet-Projects\\whole_crm\\wwwroot\\chart.css",
+              "RelativeToolTip": "wwwroot\\chart.css",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAywLkAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-03T06:33:36.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Dotnet-Projects\\whole_crm\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Dotnet-Projects\\whole_crm\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:16:37.596Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1218,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

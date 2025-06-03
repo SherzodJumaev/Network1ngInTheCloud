@@ -4,89 +4,96 @@ using whole_crm.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
-builder.Services.AddControllers()
+// --------------------
+// Services Registration
+// --------------------
+
+builder.Services
+    .AddControllers()
     .AddNewtonsoftJson(options =>
     {
-        options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+        options.SerializerSettings.ReferenceLoopHandling = 
+            Newtonsoft.Json.ReferenceLoopHandling.Ignore;
     });
 
+builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-{
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
-
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IDashboardService, DashboardService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
 
-// Add CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAll", builder =>
+    options.AddPolicy("AllowAll", policy =>
     {
-        builder.AllowAnyOrigin()
-               .AllowAnyMethod()
-               .AllowAnyHeader();
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
     });
 });
 
+// --------------------
+// Build App
+// --------------------
+
 var app = builder.Build();
 
-// if (app.Environment.IsDevelopment())
-// {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+// --------------------
+// Middleware Pipeline
+// --------------------
 
-    using IServiceScope scope = app.Services.CreateScope();
+app.UseSwagger();
+app.UseSwaggerUI();
 
-    EnsureDatabaseUpToDate<ApplicationDbContext>(scope);
-// }
-
-// Configure the HTTP request pipeline
 app.UseCors("AllowAll");
-app.UseRouting();
-app.UseAuthorization(); // optional
-app.MapControllers();
-
 app.UseStaticFiles();
+
+app.UseRouting();
+app.UseAuthorization();
+
+app.MapControllers();
 app.MapFallbackToFile("index.html");
 
-using (var seedScope = app.Services.CreateScope())
+// --------------------
+// Ensure Database & Seed Data
+// --------------------
+
+using (var scope = app.Services.CreateScope())
 {
-    var context = seedScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    EnsureDatabaseUpToDate(context);
     DataSeeder.SeedData(context);
 }
 
 app.Run();
 
-static void EnsureDatabaseUpToDate<TDbContext>(IServiceScope scope)
-    where TDbContext : DbContext
-{
-    using TDbContext context = scope.ServiceProvider
-        .GetRequiredService<TDbContext>();
+// --------------------
+// Helper Methods
+// --------------------
 
+static void EnsureDatabaseUpToDate(DbContext context)
+{
     try
     {
-        // Try to apply migrations first (if any exist)
-        var pendingMigrations = context.Database.GetPendingMigrations();
-        if (pendingMigrations.Any())
+        var hasPendingMigrations = context.Database.GetPendingMigrations().Any();
+
+        if (hasPendingMigrations)
         {
             context.Database.Migrate();
         }
-        else if (!context.Database.CanConnect() || !context.Database.GetAppliedMigrations().Any())
+        else if (!context.Database.CanConnect() || 
+                 !context.Database.GetAppliedMigrations().Any())
         {
-            // No migrations exist, create database from model
             context.Database.EnsureCreated();
         }
     }
     catch
     {
-        // Fallback to EnsureCreated if migrations fail
-        context.Database.EnsureCreated();
+        context.Database.EnsureCreated(); // fallback
     }
 }
