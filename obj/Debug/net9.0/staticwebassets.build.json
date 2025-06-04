@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8lq+bTnUhlAXhtHKkeS8NxGcLXyQplQgT/+P6lrWe4U=",
+  "Hash": "awq7idGKeEO5HXdooiI46oXsiXRYdaLC2JIdCvuUOMk=",
   "Source": "whole_crm",
   "BasePath": "_content/whole_crm",
   "Mode": "Default",
@@ -1445,7 +1445,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 09:06:34 GMT"
+          "Value": "Tue, 03 Jun 2025 09:12:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1498,7 +1498,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 09:06:34 GMT"
+          "Value": "Tue, 03 Jun 2025 09:12:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1535,7 +1535,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 09:06:34 GMT"
+          "Value": "Tue, 03 Jun 2025 09:12:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1582,7 +1582,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 09:06:34 GMT"
+          "Value": "Tue, 03 Jun 2025 09:12:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1643,7 +1643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 09:06:34 GMT"
+          "Value": "Tue, 03 Jun 2025 09:12:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1688,7 +1688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Jun 2025 09:06:34 GMT"
+          "Value": "Tue, 03 Jun 2025 09:12:51 GMT"
         },
         {
           "Name": "Cache-Control",
