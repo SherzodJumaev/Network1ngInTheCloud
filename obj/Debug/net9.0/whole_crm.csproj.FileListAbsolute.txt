@@ -157,5 +157,5 @@ E:\Dotnet-Projects\whole_crm\bin\Debug\net9.0\publish\whole_crm.runtimeconfig.js
 E:\Dotnet-Projects\whole_crm\bin\Debug\net9.0\publish\whole_crm.staticwebassets.endpoints.json
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\bfixk57pkx-nj8nr0vwyb.gz
 E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\dbx3h6z02w-dgxonfbfch.gz
-E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\1rgqet3r27-ab4ms687ds.gz
-E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-zadspteqk4.gz
+E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\1rgqet3r27-72tyioxmaz.gz
+E:\Dotnet-Projects\whole_crm\obj\Debug\net9.0\compressed\q1h6m8i29c-8oakhvfsxz.gz
