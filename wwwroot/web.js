@@ -166,7 +166,7 @@ class ClothingCRM {
         try {
             const data = await this.apiRequest("/Dashboard");
             // console.log("today ==> " + data.todaysSales);
-            console.log(data)
+            // console.log(data)
             return data;
         } catch (error) {
             // Fallback to calculated data

@@ -34,7 +34,12 @@ namespace whole_crm.Services
             var salesChange = yesterdaysSales > 0 ? ((todaysSales - yesterdaysSales) / yesterdaysSales * 100) : 0;
 
             // Total orders
-            var totalOrders = await _context.Orders.CountAsync();
+            var totalOrders = 0;
+
+            if (todaysSales == 0) totalOrders = 0;
+            else totalOrders = await _context.Orders.CountAsync();
+
+            
             var lastMonthOrders = await _context.Orders
                 .Where(o => o.OrderDate >= today.AddDays(-30))
                 .CountAsync();
