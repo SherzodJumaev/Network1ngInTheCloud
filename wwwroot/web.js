@@ -165,8 +165,8 @@ class ClothingCRM {
     async fetchDashboardData() {
         try {
             const data = await this.apiRequest("/Dashboard");
-            // console.log("today ==> " + data.todaysSales);
-            // console.log(data)
+            console.log("today ==> " + data.todaysSales);
+            console.log(data)
             return data;
         } catch (error) {
             // Fallback to calculated data
@@ -346,7 +346,7 @@ class ClothingCRM {
     async updateDashboard() {
         try {
             const dashboardData = await this.fetchDashboardData();
-            // console.log(dashboardData)
+            console.log(dashboardData)
 
             document.getElementById("todays-sales").textContent =
                 dashboardData.todaysSales?.toFixed(2) || "00.0";
