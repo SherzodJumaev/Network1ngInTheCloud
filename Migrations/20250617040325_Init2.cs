@@ -5,7 +5,7 @@
 namespace whole_crm.Migrations
 {
     /// <inheritdoc />
-    public partial class InitToday_3 : Migration
+    public partial class Init2 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

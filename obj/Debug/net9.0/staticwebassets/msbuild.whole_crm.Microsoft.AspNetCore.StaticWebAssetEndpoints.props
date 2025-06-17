@@ -16,13 +16,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"6wkgvzs1nu"},{"Name":"integrity","Value":"sha256-OkdShX0y3svsS4R7vzOqa8a5kDpcg6powttTt\u002BRSnok="},{"Name":"label","Value":"_content/whole_crm/index.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"45772"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022OkdShX0y3svsS4R7vzOqa8a5kDpcg6powttTt\u002BRSnok=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Jun 2025 04:57:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"45772"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022OkdShX0y3svsS4R7vzOqa8a5kDpcg6powttTt\u002BRSnok=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Jun 2025 06:45:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/whole_crm/index.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OkdShX0y3svsS4R7vzOqa8a5kDpcg6powttTt\u002BRSnok="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"45772"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022OkdShX0y3svsS4R7vzOqa8a5kDpcg6powttTt\u002BRSnok=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Jun 2025 04:57:42 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"45772"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022OkdShX0y3svsS4R7vzOqa8a5kDpcg6powttTt\u002BRSnok=\u0022"},{"Name":"Last-Modified","Value":"Mon, 16 Jun 2025 06:45:57 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/whole_crm/report.dgxonfbfch.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\report.js'))</AssetFile>

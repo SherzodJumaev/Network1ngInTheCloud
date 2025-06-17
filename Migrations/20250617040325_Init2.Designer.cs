@@ -12,8 +12,8 @@ using whole_crm.Data;
 namespace whole_crm.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250605064233_Init")]
-    partial class Init
+    [Migration("20250617040325_Init2")]
+    partial class Init2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
